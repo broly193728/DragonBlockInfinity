@@ -1,0 +1,18 @@
+# Gradle
+.gradle/
+build/
+gradle-8.1/
+gradle-*-bin.zip
+
+# Java
+*.class
+
+# Logs
+*.log
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store

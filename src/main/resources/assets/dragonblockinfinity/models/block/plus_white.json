@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "dragonblockinfinity:block/plus/plus_white"
+  }
+}

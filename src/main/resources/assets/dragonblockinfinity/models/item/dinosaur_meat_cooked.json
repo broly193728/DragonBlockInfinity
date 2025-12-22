@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "dragonblockinfinity:item/dinosaur_meat_cooked"
+  }
+}
