@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "dragonblockinfinity:block/namek/namek_top"
-  }
-}

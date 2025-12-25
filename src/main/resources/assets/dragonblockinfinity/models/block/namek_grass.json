@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_top",
-  "textures": {
-    "top": "dragonblockinfinity:block/namek/namek_top",
-    "side": "dragonblockinfinity:block/namek/namek_side",
-    "bottom": "dragonblockinfinity:block/namek/namek_side"
-  }
-}

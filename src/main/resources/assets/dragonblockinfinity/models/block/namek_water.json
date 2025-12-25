@@ -1,6 +1,0 @@
-{
-  "parent": "block/water",
-  "textures": {
-    "particle": "dragonblockinfinity:block/namek/namek_water"
-  }
-}

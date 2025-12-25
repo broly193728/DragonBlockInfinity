@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "dragonblockinfinity:block/namek/namek_log_top",
-    "side": "dragonblockinfinity:block/namek/namek_log_side"
-  }
-}
