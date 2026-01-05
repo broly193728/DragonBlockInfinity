@@ -3,6 +3,7 @@ package com.bernardo.dbi.style;
 import com.bernardo.dbi.style.data.MartialArts;
 import com.bernardo.dbi.style.data.Spiritualist;
 import com.bernardo.dbi.style.data.Warrior;
+import com.bernardo.dbi.style.data.StyleData;
 import java.util.HashMap;
 import java.util.Map;
 

@@ -2,30 +2,26 @@ package com.bernardo.dbi;
 
 import com.bernardo.dbi.race.RaceRegistry;
 import com.bernardo.dbi.network.ModNetwork;
-import com.bernardo.dbi.capability.PlayerRaceCap;
-import com.bernardo.dbi.capability.PlayerStatusCap;
+
 import com.bernardo.dbi.style.StyleRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+
+import com.bernardo.dbi.capability.CapabilityInit;
+import com.bernardo.dbi.client.KeyBindings;
 
 public class ModRegister {
 
     public static void registerAll() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Registrar raças
         RaceRegistry.registerAll();
-
-        // Registrar estilos de luta
         StyleRegistry.registerAll();
+        ModNetwork.register();
 
-        // Registrar rede
-        ModNetwork.register(modEventBus);
-
-        // Registrar capabilities
-        PlayerRaceCap.register(modEventBus);
-        PlayerStatusCap.register(modEventBus);
-
-        // Adicionar outros registros aqui conforme necessário
+        CapabilityInit.register(); // 👈 AQUI
+        
+        // Registrar keybinds (já automático via @Mod.EventBusSubscriber, mas garantido aqui)
+        modEventBus.addListener(KeyBindings::registerKeyMappings);
     }
 }

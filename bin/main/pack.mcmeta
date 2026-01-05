@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Dragon Block Infinity resources",
+    "pack_format": 9,
+    "forge:mods": ["dbi"]
+  }
+}
